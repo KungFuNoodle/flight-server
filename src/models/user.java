@@ -1,12 +1,12 @@
 package models;
 
-public class user {
+public class User {
 //veriables
 
     private String id, username, email, password;
 
 //Constructor
-    public user(String id, String username, String email, String password) {
+    public User(String id, String username, String email, String password) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -28,6 +28,11 @@ public class user {
 
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", username=" + username + ", email=" + email + ", password=" + password + '}';
     }
 
 }
